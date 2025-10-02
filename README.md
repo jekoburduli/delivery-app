@@ -1,19 +1,20 @@
-# Restaurant App 🍕🍔🍣
+# Delivery App 🍕🍔🍣
 
-A simple food ordering app built with HTML, CSS, and JavaScript.  
-Features:
+A **simple food ordering web app** built with **HTML, CSS, and JavaScript**.  
+Users can browse restaurants by location, view menus, add meals to a cart, and checkout.  
 
-- Browse restaurants by location
-- Geolocation detection (OpenStreetMap API)
-- Login/Signup system
-- Add meals to cart and checkout
-- Modal-based UI
+---
 
-## Demo
+## 🌟 Features
 
-👉 [Live Demo on GitHub Pages](https://yourusername.github.io/restaurant-app)
+- **Browse Restaurants:** Filter by location or see all restaurants you can write georgian cities (tbilisi, batumi, kutaisi).  
+- **Geolocation Support:** Automatically detects your city using OpenStreetMap API.  
+- **Restaurant Menu:** View meals for each restaurant in a modal.  
+- **Cart System:** Add meals to cart, remove items, and view total.  
+- **Checkout Form:** Enter delivery location and select payment method.  
+- **User Authentication:** Signup and login (stored in memory).  
+- **Responsive UI:** Smooth scrolling and modals for better experience.  
 
-## How to run
+---
 
-1. Clone this repo
-2. Open `index.html` in your browser
+https://jekoburduli.github.io/delivery-app/
