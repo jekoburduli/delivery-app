@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastEats Delivery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+<div id="menu-modal" class="modal">
+  <div class="modal-content">
+    <button class="close-modal">×</button>
+    <h3 id="modal-restaurant-name"></h3>
+    <ul id="modal-meals"></ul>
+  </div>
+</div>
+
+</div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">FastEats</div>
+      <ul class="nav-links">
+        <li class="view-home"><a href="#">Home</a></li>
+        <li class="view-restaurants"><a href="#">Restaurants</a></li>
+        <li class="view-cart"><a href="#">Cart</a></li>
+      </ul>
+            <div class="user-status"></div>
+
+      <div class="auth-buttons">
+        <button class="login-btn">Login</button>
+        <button class="signup-btn">Sign Up</button>
+      </div>
+    </nav>
+
+
+<div id="cart-modal" class="modal large-modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="close" aria-label="Close">&times;</button>
+
+    <h2>Your Cart</h2>
+
+    <ul id="cart-items"></ul>
+
+    <div id="cart-total"></div>
+
+    <div class="checkout-actions">
+      <button class="checkout-btn">Checkout</button>
+    </div>
+
+    <form id="checkout-form">
+      <label for="delivery-location">Delivery Location</label>
+      <input id="delivery-location" type="text" placeholder="Enter your address" required>
+
+      <p>Payment Method:</p>
+      <div class="payment-options">
+  <label>
+    <input type="radio" name="payment" value="Card" required>
+    Card
+  </label>
+  <label>
+    <input type="radio" name="payment" value="Cash">
+    Cash
+  </label>
+</div>
+
+
+      <button type="submit" class="confirm-btn">Confirm Order</button>
+    </form>
+
+    <div id="order-confirmation"></div>
+  </div>
+</div>
+
+
+
+  
+</div>
+
+<div id="login-modal" class="modal small-modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Login</h2>
+    <form>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="login-submit action-btn">Login</button>
+    </form>
+  </div>
+</div>
+
+<div id="signup-modal" class="modal small-modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Sign Up</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="signup-submit action-btn">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+    <section class="hero"> 
+      <div class="hero-content">
+        <h1>Delicious food delivered to your door</h1>
+        <div id="location-input">
+          <input type="text" placeholder="Enter location" />
+          <button id="find-btn">Find Restaurants</button>
+          <button id="user-location">Use Your Location</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="restaurants">
+      <h2>Restaurants in Your Area</h2>
+      <div class="restaurant-cards" id="local-restaurants"></div>
+    </section>
+
+    <section class="restaurants">
+      <h2>Popular Restaurants</h2>
+      <div class="restaurant-cards" id="popular-restaurants">
+
+      </div>
+    </section>
+
+    <section class="restaurants">
+      <h2>All Restaurants</h2>
+      <div class="restaurant-cards" id="all-restaurants"></div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 FastEats. All Rights Reserved.</p>
+    </footer>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
